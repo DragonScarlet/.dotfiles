@@ -8,6 +8,11 @@ config.window_background_opacity = 0.8
 config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 config.native_macos_fullscreen_mode = false
+config.leader = {
+  key = "w",
+  mods = "CTRL",
+  timeout_milliseconds = math.maxinteger,
+}
 config.keys = {
     {
         key = 'n',
@@ -31,27 +36,27 @@ config.keys = {
     },
     {
         key = "h",
-        mods = "CTRL",
+        mods = "LEADER",
         action = act.ActivatePaneDirection("Left"),
     },
     {
         key = "j",
-        mods = "CTRL",
+        mods = "LEADER",
         action = act.ActivatePaneDirection("Down"),
     },
     {
         key = "k",
-        mods = "CTRL",
+        mods = "LEADER",
         action = act.ActivatePaneDirection("Up"),
     },
     {
         key = "l",
-        mods = "CTRL",
+        mods = "LEADER",
         action = act.ActivatePaneDirection("Right"),
     },
     {
         key = "-",
-        mods = "CTRL",
+        mods = "LEADER",
         action = act.ActivatePaneDirection("Right"),
     },
 
