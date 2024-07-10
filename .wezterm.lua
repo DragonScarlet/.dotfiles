@@ -19,6 +19,41 @@ config.keys = {
         mods = 'SHIFT|CTRL',
         action = act.SpawnTab 'CurrentPaneDomain',
     },
-}
+    {
+        key = 'v',
+        mods = 'SHIFT|CTRL',
+        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+    },
+    {
+        key = 'h',
+        mods = 'SHIFT|CTRL',
+        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    },
+    {
+        key = "h",
+        mods = "CTRL",
+        action = act.ActivatePaneDirection("Left"),
+    },
+    {
+        key = "j",
+        mods = "CTRL",
+        action = act.ActivatePaneDirection("Down"),
+    },
+    {
+        key = "k",
+        mods = "CTRL",
+        action = act.ActivatePaneDirection("Up"),
+    },
+    {
+        key = "l",
+        mods = "CTRL",
+        action = act.ActivatePaneDirection("Right"),
+    },
+    {
+        key = "-",
+        mods = "CTRL",
+        action = act.ActivatePaneDirection("Right"),
+    },
 
+}
 return config
